@@ -27,4 +27,3 @@ export function removeStored(key) {
         return false;
     }
 }
-

@@ -6,4 +6,3 @@ export default function debounce(callback, delay) {
         timerId = window.setTimeout(() => callback(...args), delay);
     };
 }
-

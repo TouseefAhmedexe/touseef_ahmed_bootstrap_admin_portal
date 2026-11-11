@@ -59,4 +59,3 @@ export function createAvatar(user, sizeClass = "") {
     avatar.append(image);
     return avatar;
 }
-
