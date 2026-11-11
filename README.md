@@ -65,4 +65,4 @@ Phone 375px, tablet 768px and desktop 1280px. Screenshots are in the screenshots
 
 ## How to run
 Open the folder in Visual Studio Code and use Live Server. Modules and fetch do not work when
-an HTML file is opened by double-clicking it.
+an HTML file is opened by double-clicking it
