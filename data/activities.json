@@ -1,0 +1,8 @@
+[
+    { "id": 1, "userId": 11, "description": "Registered a new account", "timestamp": "2026-11-09T14:20:00", "status": "Pending", "progress": 25 },
+    { "id": 2, "userId": 8, "description": "Uploaded a resume for review", "timestamp": "2026-11-08T11:05:00", "status": "In progress", "progress": 50 },
+    { "id": 3, "userId": 6, "description": "Requested access as a reviewer", "timestamp": "2026-11-07T16:40:00", "status": "Pending", "progress": 25 },
+    { "id": 4, "userId": 10, "description": "Completed the profile form", "timestamp": "2026-11-06T09:30:00", "status": "Completed", "progress": 100 },
+    { "id": 5, "userId": 5, "description": "Updated contact details", "timestamp": "2026-11-04T13:15:00", "status": "In progress", "progress": 75 },
+    { "id": 6, "userId": 2, "description": "Approved the weekly assignments", "timestamp": "2026-11-03T10:00:00", "status": "Completed", "progress": 100 }
+]

@@ -1,0 +1,14 @@
+[
+    { "id": 1, "name": "Ayesha Khan", "email": "ayesha.khan@example.com", "role": "Administrator", "registeredOn": "2025-09-14", "status": "Active", "avatar": "user-01.jpg" },
+    { "id": 2, "name": "Hamza Ali", "email": "hamza.ali@example.com", "role": "Mentor", "registeredOn": "2025-10-02", "status": "Active", "avatar": "user-02.jpg" },
+    { "id": 3, "name": "Sara Ahmed", "email": "sara.ahmed@example.com", "role": "Mentor", "registeredOn": "2025-10-19", "status": "Active", "avatar": "user-03.jpg" },
+    { "id": 4, "name": "Bilal Hussain", "email": "bilal.hussain@example.com", "role": "Intern", "registeredOn": "2026-01-11", "status": "Inactive", "avatar": "user-04.jpg" },
+    { "id": 5, "name": "Maryam Noor", "email": "maryam.noor@example.com", "role": "Intern", "registeredOn": "2026-02-03", "status": "Active", "avatar": "user-05.jpg" },
+    { "id": 6, "name": "Usman Tariq", "email": "usman.tariq@example.com", "role": "Reviewer", "registeredOn": "2026-02-21", "status": "Pending", "avatar": "user-06.jpg" },
+    { "id": 7, "name": "Zainab Malik", "email": "zainab.malik@example.com", "role": "Intern", "registeredOn": "2026-03-08", "status": "Active", "avatar": "user-07.jpg" },
+    { "id": 8, "name": "Hassan Raza", "email": "hassan.raza@example.com", "role": "Intern", "registeredOn": "2026-04-15", "status": "Pending", "avatar": "user-08.jpg" },
+    { "id": 9, "name": "Fatima Siddiqui", "email": "fatima.siddiqui@example.com", "role": "Reviewer", "registeredOn": "2026-05-27", "status": "Inactive", "avatar": "user-09.jpg" },
+    { "id": 10, "name": "Ali Hamid", "email": "ali.hamid@example.com", "role": "Intern", "registeredOn": "2026-06-30", "status": "Active", "avatar": "user-10.jpg" },
+    { "id": 11, "name": "Noor Fatima", "email": "noor.fatima@example.com", "role": "Intern", "registeredOn": "2026-09-12", "status": "Pending", "avatar": "user-11.jpg" },
+    { "id": 12, "name": "Omar Sheikh", "email": "omar.sheikh@example.com", "role": "Mentor", "registeredOn": "2026-10-05", "status": "Inactive", "avatar": "user-12.jpg" }
+]
