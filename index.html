@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Admin dashboard for managing users, built with Bootstrap 5.">
+    <meta name="author" content="Touseef Ahmed">
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
+    <script src="lib/bootstrap/bootstrap.bundle.min.js" defer></script>
+    <title>Dashboard | Bloomrix Admin</title>
+</head>
+
+<body>
+    <a class="skip-link visually-hidden-focusable btn btn-light" href="#main-content">Skip to main content</a>
+
+    <header class="sticky-top">
+        <nav class="navbar app-navbar bg-primary" data-bs-theme="dark">
+            <div class="container-fluid gap-2">
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar" aria-label="Open the menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <button class="btn btn-outline-light btn-sm d-none d-lg-inline-block" type="button" id="sidebar-toggle" aria-controls="sidebar" aria-expanded="true" data-bs-toggle="tooltip" data-bs-title="Show or hide the sidebar">Menu</button>
+
+                <a class="navbar-brand me-auto" href="index.html">Bloomrix Admin</a>
+
+                <button class="btn btn-outline-light btn-sm" type="button" id="theme-button" data-bs-toggle="tooltip" data-bs-title="Switch between the light and dark theme">Dark theme</button>
+
+                <div class="dropdown">
+                    <button class="btn btn-outline-light btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Quick actions</button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="users.html?add=1">Add a user</a></li>
+                        <li><a class="dropdown-item" href="users.html?status=pending">Review pending users</a></li>
+                        <li><a class="dropdown-item" href="register.html">Open the registration page</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn btn-link text-white text-decoration-none dropdown-toggle d-flex align-items-center gap-2 p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Touseef Ahmed account menu">
+                        <span class="avatar avatar--sm">TA</span>
+                        <span class="d-none d-md-inline">Touseef Ahmed</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="settings.html">Settings</a></li>
+                        <li><a class="dropdown-item" href="register.html">Register a user</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <noscript>
+        <div class="alert alert-warning m-3">This page needs JavaScript to load its data.</div>
+    </noscript>
+</body>
+
+</html>
