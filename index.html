@@ -91,7 +91,130 @@
 
         <div class="app-main d-flex flex-column">
             <main class="flex-grow-1 p-3 p-md-4" id="main-content" tabindex="-1">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-1">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                    </ol>
+                </nav>
 
+                <h1 class="h2 mb-1">Dashboard</h1>
+                <p class="text-body-secondary mb-4">A summary of the users of this portal. All data is sample data.</p>
+
+                <section class="rounded-3 bg-body shadow-sm p-4 p-md-5 mb-4" aria-labelledby="welcome-title">
+                    <h2 class="h3" id="welcome-title">Welcome back, Touseef</h2>
+                    <p class="mb-3">The numbers and activities on this page are loaded from JSON files when the page opens.</p>
+
+                    <div class="d-flex flex-wrap gap-2">
+                        <a class="btn btn-primary" href="users.html">Manage users</a>
+                        <a class="btn btn-outline-primary" href="register.html">Register a user</a>
+                    </div>
+                </section>
+
+                <section class="mb-4" aria-labelledby="summary-title">
+                    <h2 class="h4 mb-3" id="summary-title">User summary</h2>
+
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-4 g-3">
+                        <div class="col">
+                            <article class="card stat-card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h3 class="h6 text-body-secondary text-uppercase mb-2">Total users</h3>
+                                    <p class="display-6 fw-semibold mb-1" data-stat="total">&mdash;</p>
+                                    <p class="small text-body-secondary mb-0" data-stat-share="total"></p>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="col">
+                            <article class="card stat-card stat-card--active h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h3 class="h6 text-body-secondary text-uppercase mb-2">Active users</h3>
+                                    <p class="display-6 fw-semibold mb-1" data-stat="active">&mdash;</p>
+                                    <p class="small text-body-secondary mb-0" data-stat-share="active"></p>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="col">
+                            <article class="card stat-card stat-card--pending h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h3 class="h6 text-body-secondary text-uppercase mb-2">Pending users</h3>
+                                    <p class="display-6 fw-semibold mb-1" data-stat="pending">&mdash;</p>
+                                    <p class="small text-body-secondary mb-0" data-stat-share="pending"></p>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="col">
+                            <article class="card stat-card stat-card--inactive h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h3 class="h6 text-body-secondary text-uppercase mb-2">Inactive users</h3>
+                                    <p class="display-6 fw-semibold mb-1" data-stat="inactive">&mdash;</p>
+                                    <p class="small text-body-secondary mb-0" data-stat-share="inactive"></p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="row g-4">
+                    <section class="col-12 col-xl-8" aria-labelledby="activities-title">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-header bg-body d-flex flex-wrap align-items-center justify-content-between gap-2">
+                                <h2 class="h5 mb-0" id="activities-title">Recent activities</h2>
+                                <a class="btn btn-sm btn-outline-primary" href="users.html">View all users</a>
+                            </div>
+
+                            <div id="activity-state" hidden></div>
+                            <ul class="list-group list-group-flush" id="activity-list"></ul>
+                        </div>
+                    </section>
+
+                    <div class="col-12 col-xl-4">
+                        <section class="mb-4" aria-labelledby="help-title">
+                            <h2 class="h5 mb-3" id="help-title">Admin guide</h2>
+
+                            <div class="accordion shadow-sm" id="help-accordion">
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#help-add" aria-expanded="true" aria-controls="help-add">How do I add a user?</button>
+                                    </h3>
+                                    <div class="accordion-collapse collapse show" id="help-add" data-bs-parent="#help-accordion">
+                                        <div class="accordion-body">Open the Users page and choose Add user. Fill in the form and save it. The new user is added to the list.</div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#help-save" aria-expanded="false" aria-controls="help-save">Are my changes saved?</button>
+                                    </h3>
+                                    <div class="accordion-collapse collapse" id="help-save" data-bs-parent="#help-accordion">
+                                        <div class="accordion-body">No. This portal has no server. Added, edited and deleted users stay in the page until you reload it. Then the sample data is loaded again.</div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#help-theme" aria-expanded="false" aria-controls="help-theme">How do I change the theme?</button>
+                                    </h3>
+                                    <div class="accordion-collapse collapse" id="help-theme" data-bs-parent="#help-accordion">
+                                        <div class="accordion-body">Use the theme button in the top bar, or the Account tab on the Settings page. Your choice is saved in this browser.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section aria-labelledby="links-title">
+                            <h2 class="h5 mb-3" id="links-title">Quick links</h2>
+
+                            <div class="list-group shadow-sm">
+                                <a class="list-group-item list-group-item-action" href="users.html?status=pending">Review pending users</a>
+                                <a class="list-group-item list-group-item-action" href="register.html">Registration page</a>
+                                <a class="list-group-item list-group-item-action" href="settings.html">Settings</a>
+                            </div>
+                        </section>
+                    </div>
+                </div>
             </main>
 
             <footer class="border-top bg-body px-3 px-md-4 py-3 small text-body-secondary">
